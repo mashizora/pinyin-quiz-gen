@@ -1,0 +1,11 @@
+body {
+  margin: auto;
+  padding: 28px 14px;
+  max-width: 768px;
+}
+
+@media print {
+  .noprint {
+    display: none;
+  }
+}
