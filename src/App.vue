@@ -2,7 +2,7 @@
   <NCard class="noprint">
     <NSpace vertical size="large">
       <NSpace justify="center">
-        <NH1><NText type="primary">拼音测试生成器</NText></NH1>
+        <NH1><NText type="primary">看拼音写词语生成器</NText></NH1>
       </NSpace>
       <NInput v-model:value="title" placeholder="请输入标题" />
       <NInput v-model:value="words" placeholder="请输入词语，用空格隔开" type="textarea" :autosize="{ minRows: 3 }" />
@@ -20,7 +20,7 @@
     <h1>{{ title }}</h1>
   </NSpace>
 
-  <NSpace :size="0" justify="center">
+  <NSpace size="small" justify="center">
     <PinyinBox v-for="word in wordList" :value="word" />
   </NSpace>
 </template>
